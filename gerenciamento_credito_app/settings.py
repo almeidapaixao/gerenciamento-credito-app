@@ -34,7 +34,15 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.UserRateThrottle',
+    ],
+    # Rate limiting para evitar DDos e overload do servidor.
+    'DEFAULT_THROTTLE_RATES': {
+        'user': '50/hour',
+    },
 }
+
 
 # Configuring JWT authentication
 from datetime import timedelta
