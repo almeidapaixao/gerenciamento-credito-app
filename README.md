@@ -1,6 +1,3 @@
-Aqui está um modelo de README detalhado para o seu projeto Django, que inclui todos os aspectos que discutimos até agora. Sinta-se à vontade para adaptar conforme necessário.
-
----
 
 # Gerenciamento de Crédito
 
