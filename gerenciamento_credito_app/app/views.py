@@ -131,6 +131,5 @@ class TokenObtainFor30DaysView(APIView):
         access_token.set_exp(lifetime=timedelta(days=30))
 
         return Response({
-            'access': str(access_token),
-            'refresh': str(refresh),
+            'access': str(access_token)
         }, status=status.HTTP_200_OK)
