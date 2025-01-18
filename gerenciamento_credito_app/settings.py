@@ -36,22 +36,24 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_THROTTLE_CLASSES': [
         'rest_framework.throttling.UserRateThrottle',
+        'rest_framework.throttling.UserRateThrottle'
     ],
     # Rate limiting para evitar DDos e overload do servidor.
     'DEFAULT_THROTTLE_RATES': {
-        'user': '50/hour',
+        'user': '50/minute',
+        'anon': '50/minute'
     },
 }
 
 
-# Configuring JWT authentication
+# Configurando JWT do nosso server
 from datetime import timedelta
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),  # Tempo de expiração do token de acesso
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),  # Tempo de expiração do token de refresh
-    'ROTATE_REFRESH_TOKENS': False,  # Desabilitar rotação de refresh tokens
-    'BLACKLIST_AFTER_ROTATION': False,  # Não colocar tokens de refresh na blacklist
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=30), 
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),  
+    'ROTATE_REFRESH_TOKENS': False, 
+    'BLACKLIST_AFTER_ROTATION': False, 
 }
 
 INSTALLED_APPS = [
