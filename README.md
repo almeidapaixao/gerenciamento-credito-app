@@ -50,7 +50,6 @@ Este é um sistema de **Gerenciamento de Crédito** desenvolvido em Django, que 
 - **Autenticação**: Requer autenticação via JWT.
 - **Resposta**:
   - `access`: Token de acesso válido por 30 dias.
-  - `refresh`: Token de atualização.
   
 **Exemplo de resposta**:
 ```json
@@ -167,7 +166,9 @@ Este é um sistema de **Gerenciamento de Crédito** desenvolvido em Django, que 
 
 - O **Token JWT** é utilizado para autenticação.
 - O token de acesso padrão tem uma expiração de 5 minutos.
-- O token de acesso de 30 dias pode ser obtido através do endpoint `/api/token/30days/`.
+- O token de acesso de 30 dias pode ser obtido através do endpoint `/api/token/30days/` com o token de acesso padrão (Bearer <token de acesso padrão>)
+- Após gerar o token de 30 dias, ele será valido pelos próximos 30 dias, tendo a necessidade de renovar
+por questões de segurança.
 
 ## Como Rodar o Projeto Localmente
 
