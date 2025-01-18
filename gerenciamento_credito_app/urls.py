@@ -10,8 +10,8 @@ router.register(r'contratos', ContratoViewSet)
 
 
 urlpatterns = [
-    path('api', include(router.urls)),
-    path('admin', admin.site.urls),
-    path('api/token', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('api/token/30days', TokenObtainFor30DaysView.as_view(), name='token_obtain_30days'),
+    path('api/', include(router.urls)),
+    path('admin/', admin.site.urls),
+    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/30days/', TokenObtainFor30DaysView.as_view(), name='token_obtain_30days'),
 ]
