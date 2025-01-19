@@ -3,9 +3,9 @@
 
 ## DOCUMENTAÇÃO IMPORTANTE (3 <TRÊS> LINKS ABAIXO):
 
-- [Design low level da aplicação, com detalhes internos ->](https://miro.com/welcomeonboard/akVrWDRLcVVsc2hpZTQ4eHlqMmZBUVF1MGkxUDdPQVNTQ1AweFF0Z21uWGcrdVVYT1pFdGpQbyttN2NDTU8vUy82dmpoV2RHdXBHanllYld0bitsbVhDZWY2ajZGem9YSlhCUVZBRjRWWjJtZjVmVTZUQ0hBTTFGZTRpc2hMR3MhZQ==?share_link_id=366214079812)
+- [Design low level da aplicação, com detalhes internos](https://miro.com/app/board/uXjVLQpfFH8=/?share_link_id=75638430534)
 
-- [Design high-level, com a arquitetura completa da aplicação ->](https://miro.com/welcomeonboard/UW5wOHR6MWhIOXR4ZzhmcWV1NU9tbk0rcnVGSTRVT1BRYnE0ZUw1c0JQZlVDMW9qMWhuVlFSNnh5QithZmVMNG1rVG94YklTaUNHM2hybDgwL3pxK0hDZWY2ajZGem9YSlhCUVZBRjRWWjJtZjVmVTZUQ0hBTTFGZTRpc2hMR3MhZQ==?share_link_id=301784557842)
+- [Design high-level, com a arquitetura completa da aplicação](https://miro.com/app/board/uXjVL595zws=/?share_link_id=805395443420)
 
 - [Padrões e regras do projeto](/docs/gerenciamento_credito.doc)
 
